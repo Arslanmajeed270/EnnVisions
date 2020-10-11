@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'; 
 
 class Content extends Component {
     render() {
@@ -169,7 +170,7 @@ class Content extends Component {
                             </div>
                             {/*end::Action*/}
                         </form>
-                        <div class="privacy-text">By proceeding, I agree that you can collect, use and disclose the information provided by me in accordance with your <a href="#">Privacy Policy</a> which I have read and understand</div>
+                        <div class="privacy-text">By proceeding, I agree that you can collect, use and disclose the information provided by me in accordance with your <Link to="">Privacy Policy</Link> which I have read and understand</div>
                         {/*end::Form*/}
                         </div>
                         {/*end::Signin*/}  

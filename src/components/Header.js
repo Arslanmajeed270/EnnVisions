@@ -25,7 +25,7 @@ class Header extends Component {
     <div className="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
       <div className="btn btn-icon btn-clean btn-lg btn-dropdown mr-1">
         <span className="svg-icon svg-icon-xl svg-icon-primary">
-          <img src="assets/images/ic_search.svg" />
+          <img src="assets/images/ic_search.svg" alt=".." />
         </span>
       </div>
     </div>
@@ -35,7 +35,7 @@ class Header extends Component {
     <div className="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
       <div className="btn btn-icon btn-clean btn-lg btn-dropdown mr-1">
         <span className="svg-icon svg-icon-xl svg-icon-primary">
-          <img src="assets/images/ic_notification.svg" />
+          <img src="assets/images/ic_notification.svg" alt="  " />
         </span>
       </div>
     </div>
@@ -54,52 +54,52 @@ class Header extends Component {
       <ul className="navi navi-hover py-4">
         {/*begin::Item*/}
         <li className="navi-item">
-          <a href="#" className="navi-link">
+          <Link to="#" className="navi-link">
             <span className="symbol symbol-20 mr-3">
               <img src="assets/media/svg/flags/226-united-states.svg" alt="" />
             </span>
             <span className="navi-text">English</span>
-          </a>
+          </Link>
         </li>
         {/*end::Item*/}
         {/*begin::Item*/}
         <li className="navi-item active">
-          <a href="#" className="navi-link">
+          <Link to="#" className="navi-link">
             <span className="symbol symbol-20 mr-3">
               <img src="assets/media/svg/flags/128-spain.svg" alt="" />
             </span>
             <span className="navi-text">Spanish</span>
-          </a>
+          </Link>
         </li>
         {/*end::Item*/}
         {/*begin::Item*/}
         <li className="navi-item">
-          <a href="#" className="navi-link">
+          <Link to="#" className="navi-link">
             <span className="symbol symbol-20 mr-3">
               <img src="assets/media/svg/flags/162-germany.svg" alt="" />
             </span>
             <span className="navi-text">German</span>
-          </a>
+          </Link>
         </li>
         {/*end::Item*/}
         {/*begin::Item*/}
         <li className="navi-item">
-          <a href="#" className="navi-link">
+          <Link to="#" className="navi-link">
             <span className="symbol symbol-20 mr-3">
               <img src="assets/media/svg/flags/063-japan.svg" alt="" />
             </span>
             <span className="navi-text">Japanese</span>
-          </a>
+          </Link>
         </li>
         {/*end::Item*/}
         {/*begin::Item*/}
         <li className="navi-item">
-          <a href="#" className="navi-link">
+          <Link to="#" className="navi-link">
             <span className="symbol symbol-20 mr-3">
               <img src="assets/media/svg/flags/195-france.svg" alt="" />
             </span>
             <span className="navi-text">French</span>
-          </a>
+          </Link>
         </li>
         {/*end::Item*/}
       </ul>
