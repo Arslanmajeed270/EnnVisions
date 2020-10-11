@@ -56,6 +56,14 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+.topbar.topbar-item .text-dark-50 {
+  color: #1B283F;
+}
+
+.topbar.topbar-item .text-muted {
+  color: #1B283F !important;
+}
+
 body {
   margin: 0;
   font-family: Poppins, Helvetica, "sans-serif";
@@ -121,6 +129,43 @@ body {
 
 .inactive-breadcrumb {
   font-size: 11px;
+}
+
+.login-form.login-signin .form-group .checkbox.checkbox-lg > span {
+  height: 20px !important;
+  width: 20px !important;
+}
+
+@media (min-width: 992px) {
+  .login-form.login-signin {
+    max-width: 450px !important;
+  }
+}
+
+.password-show {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+.password-show button {
+  background: none;
+  border: none;
+  color: #C7112B;
+  font-family: Gilroy-Medium;
+  font-size: 14px;
+}
+
+.dash-body .create-admin-container {
+  max-width: 90%;
+}
+
+.privacy-text {
+  font-size: 10px;
+  font-family: 'Gilroy-Regular';
+  color: #000000;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .subheader .btn.btn-clean:hover:not(.btn-text):not(:disabled):not(.disabled), .subheader .btn.btn-clean:focus:not(.btn-text), .subheader .btn.btn-clean.focus:not(.btn-text) {
@@ -3142,7 +3187,50 @@ textarea.form-control {
   background-position: right calc(0.375em + 0.325rem) center;
   background-size: calc(0.75em + 0.65rem) calc(0.75em + 0.65rem);
 }
-
+a:hover{
+  color:#C7112B;
+}
+.dash-topLinks{
+  margin-bottom : 10px;
+}
+.main-dashboardIndex{
+  padding: 25px 40px !important;
+}
+.cat-info img {
+  width: 42px;
+}
+.reset-pass .was-validated .form-control:valid, .reset-pass .form-control.is-valid{
+  background-image : none !important;
+}
+.reset-pass .was-validated .form-control:invalid, .reset-pass .form-control.is-invalid{
+  background-image : none !important;
+}
+.cat-info-one p:first-child {
+  border-bottom: 1px solid #eef0f8;
+}
+.cat-info-two p{
+  color:#1b283f;
+}
+.cat-info-one p{
+  color:#888c9f;
+}
+.dash-links a{
+  display : inline-block;
+}
+.dash-links a hr{
+  margin:0px;
+}
+.active-hr{
+  width:60%;
+  background-color: #c7112b;
+}
+.inactive-hr{
+  width:60%;
+  background-color:#888c9f;
+}
+#kt_content .add-edit-role.dash-body{
+  padding: 20px !important;
+}
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #1BC5BD;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(27, 197, 189, 0.25);

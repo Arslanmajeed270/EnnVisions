@@ -2,7 +2,30 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Content extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            showPassword : false,
+            showConfirmPassword:false
+        };
+    }
+    passToggleHandler  = ( type ) => {
+        console.log('checking type: ', type);
+        let password = this.state.showPassword;
+        let confirmPassword = this.state.showConfirmPassword;
+        if(type === 'password'){
+            password = !password;
+        }
+        if(type === 'confirmPassword'){
+            confirmPassword = !confirmPassword;
+        }
+        this.setState ({
+            showPassword : password,
+            showConfirmPassword:confirmPassword    
+        });
+    }
     render() {
+        const { showConfirmPassword, showPassword } = this.state;
         return (
             <React.Fragment>
                <div className="login-content flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto">
@@ -12,7 +35,7 @@ class Content extends Component {
                         <div className="login-form login-signin">
                         {/*begin::Form*/}
                         <img src="assets/images/ic-logo.svg" alt="logo" className="envision-red-logo" />
-                        <form className="form" noValidate="novalidate" id="kt_login_signin_form">
+                        <form className="form reset-pass" noValidate="novalidate" id="kt_login_signin_form">
                             {/*begin::Title*/}
                             <div className="pb-3 pt-lg-0 pt-5">
                             <h3 className="welcome-title">RESET PASSWORD</h3>
@@ -20,14 +43,40 @@ class Content extends Component {
                             {/*begin::Title*/}
                             {/*begin::Form group*/}
                             <div className="form-group">
-                            <input className="form-control form-control-solid h-auto py-4 px-6 rounded-lg" type="text" name="username" autoComplete="off" placeholder="Enter Email Address" />
+                            <input className="form-control form-control-solid h-auto py-4 px-6 rounded-lg" 
+                            type={ showPassword ? 'text' : 'password'}
+                            name="password" 
+                            autoComplete="off" 
+                            id="password" 
+                            placeholder="Enter Password" 
+                            />
+                            <div className="password-show">
+                                     <button className="ui-component__password-field__show-hide" 
+                                        type="button" 
+                                        onClick={() => this.passToggleHandler('password')}
+                                        >SHOW
+                                     </button>
+                                   </div>
                             </div>
                             {/*end::Form group*/}
                             {/*begin::Form group*/}
                             <div className="form-group">
-                            <input className="form-control form-control-solid h-auto py-4 px-6 rounded-lg" type="password" name="password" autoComplete="off" placeholder="Enter Password" />
+                            <input className="form-control form-control-solid h-auto py-4 px-6 rounded-lg" 
+                            type={showConfirmPassword ? 'text' : 'password'} 
+                            name="password" 
+                            autoComplete="off" 
+                            id="password" 
+                            placeholder="Confirm Password" 
+                            />
                             <div className="d-flex justify-content-between mt-n5">
                             </div>
+                            <div className="password-show">
+                                     <button className="ui-component__password-field__show-hide" 
+                                     type="button" 
+                                     onClick={() => this.passToggleHandler('confirmPassword')}>
+                                         SHOW
+                                    </button>
+                                   </div>
                             </div>
                             {/*end::Form group*/}
                             {/*begin::Action*/}

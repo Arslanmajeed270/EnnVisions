@@ -29,7 +29,10 @@ class Content extends Component {
                             {/*end::Form group*/}
                             {/*begin::Form group*/}
                             <div className="form-group">
-                            <input className="form-control form-control-solid h-auto py-4 px-6 rounded-lg" type="password" name="password" autoComplete="off" placeholder="Enter Password" />
+                            <input className="form-control form-control-solid h-auto py-4 px-6 rounded-lg" type="password" id="password" name="password" autoComplete="off" placeholder="Enter Password" />
+                            <div class="password-show">
+                                <button class="ui-component__password-field__show-hide" type="button" onclick="toggle(this);">SHOW</button>
+                            </div>
                             <div className="d-flex justify-content-between mt-n5">
                                 <Link to="forgot-password" className="gilroy-medium forgot-password text-primary font-size-h6 font-weight-bolder text-hover-primary pt-5">
                                 FORGOT PASSWORD ?

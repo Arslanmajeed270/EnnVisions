@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Content extends Component {
     render() {
         return (
-            <div className="content  d-flex flex-column flex-column-fluid" id="kt_content">
+            <div className="content  d-flex flex-column flex-column-fluid main-dashboardIndex" id="kt_content">
             {/*begin::Subheader*/}
             <div className="subheader py-2 py-lg-4  subheader-solid " id="kt_subheader">
                 <div className=" container-fluid  d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
@@ -45,6 +45,11 @@ class Content extends Component {
             <div className="d-flex flex-column-fluid">
                 {/*begin::Container*/}
                 <div className=" container ">
+                <div className="dash-links dash-topLinks">
+                        <Link to="#" className="active-link">USER ROLES & COMMISSION
+                        
+                        </Link>
+                    </div>
                 {/*begin::Dashboard*/}
                 {/*begin::Row*/}
                 <div className="row">
@@ -220,10 +225,14 @@ class Content extends Component {
                         </div>
                     </div>
                     <div className="dash-links">
-                        <Link to="#" className="active-link">ENNVISIONS INCOME</Link>
-                        <Link to="#">XP EATS INCOME</Link>
-                        <Link to="#">DOOR BUD INCOME</Link>
-                        <Link to="#">JIMMY GUACO'S INCOME</Link>
+                        <Link to="#" className="active-link">ENNVISIONS INCOME
+                        <hr className="active-hr"/></Link>
+                        <Link to="#">XP EATS INCOME
+                        <hr className="inactive-hr"/></Link>
+                        <Link to="#">DOOR BUD INCOME
+                        <hr className="inactive-hr"/></Link>
+                        <Link to="#">JIMMY GUACO'S INCOME
+                        <hr className="inactive-hr"/></Link>
                     </div>
                     <div className="row dash-category">
                         <div className="col-12 col-sm-6 col-md-4 col-lg-3 category">

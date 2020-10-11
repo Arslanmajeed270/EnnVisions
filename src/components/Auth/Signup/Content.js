@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class Content extends Component {
     render() {
@@ -170,17 +169,10 @@ class Content extends Component {
                             </div>
                             {/*end::Action*/}
                         </form>
+                        <div class="privacy-text">By proceeding, I agree that you can collect, use and disclose the information provided by me in accordance with your <a href="#">Privacy Policy</a> which I have read and understand</div>
                         {/*end::Form*/}
                         </div>
                         {/*end::Signin*/}  
-                    </div>
-                    {/*end::Content body*/}
-                    {/*begin::Content footer*/}
-                    {/*end::Content footer*/}
-                    <div className="footer-links d-flex justify-content-center align-items-end py-7 py-lg-0">
-                        <Link to="#" className="gilroy-medium text-primary font-weight-bolder font-size-h5">TERMS</Link>
-                        <Link to="#" className="gilroy-medium text-primary ml-10 font-weight-bolder font-size-h5">PLANS</Link>
-                        <Link to="#" className="gilroy-medium text-primary ml-10 font-weight-bolder font-size-h5">CONTACT US</Link>
                     </div>
                     </div>
                         

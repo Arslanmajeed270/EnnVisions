@@ -17,7 +17,7 @@ class from_3 extends Component {
       {/*end::Page Title*/}
       {/*begin::Actions*/}
       <div className="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200" />
-      <span className="gilroy-medium inactive-breadcrumb semi-dark-text text-muted font-weight-bold mr-4">USER ROLES</span>
+      <span className="gilroy-medium inactive-breadcrumb semi-dark-text text-muted font-weight-bold mr-4">CREATE ADMIN</span>
       {/*end::Actions*/}
     </div>
   </div>

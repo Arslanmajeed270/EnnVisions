@@ -67,7 +67,7 @@ var KTLogin = function() {
 					});
 				} else {
 					swal.fire({
-		                text: "Sorry, looks like there are some errors detected, please try again.",
+		                text: "You have entered invalid credentials.",
 		                icon: "error",
 		                buttonsStyling: false,
 		                confirmButtonText: "Ok, got it!",

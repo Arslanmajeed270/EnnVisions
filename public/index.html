@@ -59,6 +59,19 @@
     
     <script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
     <!--begin::Global Config(global config for global JS scripts)-->
+    <script type="text/javascript">
+      function toggle(button) {
+          var password = document.getElementById("password");
+          if (password.type == "password") {
+              button.innerHTML = "Hide";
+              password.type = "text";
+          }
+          else {
+              button.innerHTML = "Show";
+              password.type = "password";
+          }
+        }
+    </script>
     <script>
        var KTAppSettings = {
        "breakpoints": {
