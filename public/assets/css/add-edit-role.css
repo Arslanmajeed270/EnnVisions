@@ -2,7 +2,7 @@
 	padding: 0;
 }
 
-#kt_wrapper #kt_content .add-edit-role.dash-body {
+#kt_content .add-edit-role.dash-body {
 	background-color: #fff;
 	padding:20px !important;
   border-radius: 4px;
@@ -12,14 +12,10 @@
   background-color: #F3F6F9;
   border-radius: 5px;
 }
-.role-submit{
-  width: 40%;
-  margin: 0px auto !important;
-}
 
 .add-edit-role.dash-body .col-md-2 img {
     position: relative;
-    top: 14px;
+    top: 28px;
 }
 
 .add-edit-role.dash-body .form-group textarea {

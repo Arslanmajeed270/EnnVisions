@@ -142,6 +142,63 @@ body {
   }
 }
 
+.location-div {
+  border:1px solid #D6D6E0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.location-input {
+  margin-bottom: 7px;
+}
+
+.location-div .map iframe {
+  height: 150px;
+  border-radius: 4px;
+  border:1px solid #D6D6E0;
+}
+
+#who-serve-options {
+  position: relative;
+  left: 7px;
+}
+
+#who-serve-options .checkbox.checkbox-lg > span {
+  width: 17px !important;
+  height: 17px !important;
+  margin-right: 3px !important;
+}
+
+#who-serve-options .col-md-2, #who-serve-options .col-md-4, #who-serve-options .col-md-3 {
+  padding-right: 6px !important;
+  padding-left: 6px !important; 
+}
+
+#who-serve-options .checkbox-inline .checkbox {
+  font-size: 11px !important;
+}
+
+.timing-container {
+  border:1px solid #D6D6E0;
+  padding: 10px 10px 15px 10px;
+  border-radius: 4px;
+}
+
+#timing-container-content #who-serve-options .checkbox-inline .checkbox {
+  font-size: 14px !important;
+    color: #1B283F;
+    font-family: ROboto condensed;
+}
+
+.add-time-btn {
+  width: 100%;
+  height: 48px;
+  background-color: #C7112B !important;
+  color: #fff !important;
+  font-family: 'Gilroy-Medium';
+  font-size: 14px !important;
+}
+
 .password-show {
   position: absolute;
   top: 15px;
@@ -3187,50 +3244,7 @@ textarea.form-control {
   background-position: right calc(0.375em + 0.325rem) center;
   background-size: calc(0.75em + 0.65rem) calc(0.75em + 0.65rem);
 }
-a:hover{
-  color:#C7112B;
-}
-.dash-topLinks{
-  margin-bottom : 10px;
-}
-.main-dashboardIndex{
-  padding: 25px 40px !important;
-}
-.cat-info img {
-  width: 42px;
-}
-.reset-pass .was-validated .form-control:valid, .reset-pass .form-control.is-valid{
-  background-image : none !important;
-}
-.reset-pass .was-validated .form-control:invalid, .reset-pass .form-control.is-invalid{
-  background-image : none !important;
-}
-.cat-info-one p:first-child {
-  border-bottom: 1px solid #eef0f8;
-}
-.cat-info-two p{
-  color:#1b283f;
-}
-.cat-info-one p{
-  color:#888c9f;
-}
-.dash-links a{
-  display : inline-block;
-}
-.dash-links a hr{
-  margin:0px;
-}
-.active-hr{
-  width:60%;
-  background-color: #c7112b;
-}
-.inactive-hr{
-  width:60%;
-  background-color:#888c9f;
-}
-#kt_content .add-edit-role.dash-body{
-  padding: 20px !important;
-}
+
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #1BC5BD;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(27, 197, 189, 0.25);
